@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        body {
+            height: 4000px;
+        }
+
+        #dot {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: darkorange;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="dot"></div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script type="text/javascript">
+
+//swap commented code w/ uncommented code to get the box to follow mouse movements after mouse moves and then stops for 2 secs.
+
+        $(function(){
+
+            var dot = $('#dot');
+
+            var stack = [];
+            var timeoutId;
+
+            $('body').on('mousemove', function(event){
+
+//                clearTimeout(timeoutId);
+
+                dot.css({top: event.pageY +15, left: event.pageX + 15});
+
+//                stack.push({
+//                    top: event.pageY,
+//                    left: event.pageX,
+//                    ts: Date.now()
+//                });
+//
+//                timeoutId = setTimeout(playBack, 2000);
+//
+//                    function playBack(idx){
+//                        if(!idx){
+//                            dot.css(stack[0]);
+//                            playBack(1);
+//                        } else if(idx === stack.length){
+//                            stack = [];
+//                        } else {
+//                            var point = stack[idx];
+//                            var delay = point.ts - stack[idx-1].ts;
+//
+//                            setTimeout(function(){
+//                                dot.css(point);
+//                                playBack(idx + 1);
+//                            }, delay);
+//                        }
+//                    }
+//
+                });
+            });
+    </script>
+</body>
+</html>

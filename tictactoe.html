@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <link href="tictacstyle.css" rel="stylesheet" type="text/css"/>
+        <link href='http://fonts.googleapis.com/css?family=Orbitron:500,700,900,400' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+
+    <div id="status">
+        <div id="whos_turn"></div>
+        <button id="reset"> reset </button>
+        <div id="msg"></div>
+    </div>
+
+    <div id="container">
+
+        <table id="table">
+                <thead>
+                <tr>
+                    <th id="tableHead" colspan="3">Tic Tac Toe</th>
+                </tr>
+
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td id="tcolumn1"></td>
+                        <td id="tcolumn2"></td>
+                        <td id="tcolumn3"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="mcolumn1"></td>
+                        <td id="mcolumn2"></td>
+                        <td id="mcolumn3"></td>
+
+                    </tr>
+
+                    <tr>
+                        <td id="bcolumn1"></td>
+                        <td id="bcolumn2"></td>
+                        <td id="bcolumn3"></td>
+                    </tr>
+
+                <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+                <!--<script type="text/javascript" src="jquery.js"></script>-->
+                <script type="text/javascript" src="tictac.js"></script>
+
+                </tbody>
+        </table>
+    </div>
+    </body>
+</html>

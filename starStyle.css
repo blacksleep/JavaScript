@@ -1,0 +1,78 @@
+body {
+    background-color: #cdcba1;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 140px;
+    font-family: fantasy;
+    font-size: 42px;
+    line-height: 0;
+}
+
+#container {
+    position: relative;
+    height: 50px;
+    width: 203px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #ff6a04;
+    background-color: #999999;
+}
+
+ul li {
+    position: absolute;
+    margin: 0 auto;
+    background-image: url('http://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Five-pointed_star.svg/1088px-Five-pointed_star.svg.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    display: inline;
+    height: 30px;
+    width: 30px;
+
+}
+
+#firstStar {
+    margin-top: 10px;
+    margin-left: -25px;
+}
+
+#secondStar {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#thirdStar {
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+#fourthStar {
+    margin-top: 10px;
+    margin-left: 110px;
+}
+
+#fifthStar {
+    margin-top: 10px;
+    margin-left: 155px;
+}
+
+button {
+    position: relative;
+    height: 30px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #999999;
+    font-family: fantasy;
+    font-size: 18px;
+    border: 3px solid #ff6a04;
+    box-shadow: 2px 2px 2px 2px #484848;
+
+}
+
+#star:hover, .starred, .current {
+    background-image: url('http://www.mricons.com/store/png/116462_33778_128_nintendo_star_icon.png');
+    background-size: 30px;
+
+}

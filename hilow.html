@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Hi-Low</title>
+
+    body {
+        background: #ccc;
+    }
+
+    #container {
+        background: #fff;
+        margin: 50px auto;
+        width: 400px;
+    }
+
+    #menu {
+        border-bottom: 1px solid #999;
+    }
+
+    #gamebtn {
+        border: 200px;
+    }
+
+</head>
+<body>
+    <div id="container">
+
+        <div id="menu">
+            <input id="max" type="text" placeholder="Max" />
+            <button id="gamebtn">New Game</button>
+            <span id="guess_count"></span>
+        </div>
+        <div id="guesses">
+
+        </div>
+        <div id="footer">
+            <input id="aGuess" type="text" placeholder="guess"/>
+            <button id="guessbtn">Guess!</button>
+        </div>
+    </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+$function(){
+
+    var num;
+    var guesses;
+
+    var max_el = $('#max'),
+    gamebtn = $(;#gamebtn'),
+    count_el = $('#guess_count'),
+    guess_el = $('#aGuess;),
+    guessbtn =$('#guessbtn'),
+    guesses_el =$('#guesses');
+    footer =$('#footer');
+
+    footer.hide();
+
+    gamebtn.on('click', function(){
+        num = getRandomInt(1, parseInt(max_el.val());
+    });
+
+    guessbtn.on('click, function(){
+
+    });
+
+
+});
+</body>
+</html>
