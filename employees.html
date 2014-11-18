@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+    </script>
+    <script src="employees.js"></script>
+
+
+
+    <style>
+        table td {
+            padding: 10px;
+            font-size: 18px;
+            color: #cccccc;
+            background-color: #373737;
+            border: 3px solid #6e3aff;
+        }
+
+        table {
+
+            padding: 0;
+        }
+
+        h1 {
+            font-family: garamond, sans-serif;
+            color: #cccccc;
+            padding-left: 50px;
+
+        }
+
+        body {
+            background-color: #484848;
+        }
+
+        button {
+            border-radius: 5px;
+            font-size: 18px;
+            padding: 2px 10px;
+            font-family: garamond, sans-serif;
+        }
+
+        #edit_box {
+            font-family: garamond, sans-serif;
+            color: #ccc;
+            display: none;
+            width: auto;
+
+        }
+
+        div label {
+            padding-right: 25px;
+            font-size: 18px;
+        }
+
+        #edit_name {
+            background-color: #373737;
+            border: 3px solid #6e3aff;
+            color: #ccc;
+            font-family: garamond, sans-serif;
+            font-size: 18px;
+
+        }
+
+        #edit_phone {
+            background-color: #373737;
+            border: 3px solid #6e3aff;
+            color: #ccc;
+            font-family: garamond, sans-serif;
+            font-size: 18px;
+
+        }
+
+        #edit_address {
+            background-color: #373737;
+            border: 3px solid #6e3aff;
+            color: #ccc;
+            font-family: garamond, sans-serif;
+            font-size: 18px;
+
+        }
+
+        #googleMap {
+            width:500px;
+            height:380px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<h1>Employee List</h1>
+<div id="employee_list"></div>
+
+
+<button id="add">Add Employee</button>
+
+<div id = "edit_box">
+</div>
+
+<div id="googleMap"</div>
+
+</body>
+</html>
